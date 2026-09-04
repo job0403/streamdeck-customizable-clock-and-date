@@ -13,9 +13,9 @@
 ### 📸 Beautiful Configurations
 
 <p align="center">
-  <img src="github-assets/Config2_CyanAMPM.png" width="30%">
-  <img src="github-assets/Config4_Sunset.png" width="30%">
-  <img src="github-assets/Config1_Classic.png" width="30%">
+  <img src="github-assets/2.png" width="30%">
+  <img src="github-assets/3.png" width="30%">
+  <img src="github-assets/4.png" width="30%">
 </p>
 
 ## ✨ Features
