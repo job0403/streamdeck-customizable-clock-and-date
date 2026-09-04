@@ -43,17 +43,6 @@
 2. **Add to Canvas:** Drag the "Customizable Clock & Date" action onto your Stream Deck.
 3. **Customize:** Click the widget to open the Property Inspector at the bottom of your screen and start tweaking colors, fonts, and layouts!
 
-## 💻 Building from Source
-
-If you want to manually build or modify the plugin yourself:
-
-```cmd
-:: Build the executable
-build.bat
-
-:: Install directly to Stream Deck
-install.bat
-```
 
 ## 🛠 Contributing
 
