@@ -1,0 +1,37 @@
+{
+  "UUID": "com.job0403.clock",
+  "SDKVersion": 3,
+  "Name": "Customizable Clock & Date",
+  "Description": "A highly customizable, ultra-low memory clock plugin.",
+  "Author": "Pongpiched Rakshit",
+  "Version": "1.0.0.0",
+  "Icon": "imgs/plugin-icon",
+  "Category": "Customizable Clock & Date",
+  "CategoryIcon": "imgs/category-icon",
+  "CodePath": "CustomizableClock.exe",
+  "Actions": [
+    {
+      "UUID": "com.job0403.clock.action",
+      "Name": "Customizable Clock & Date",
+      "Tooltip": "Shows a clean, low-RAM real-time clock.",
+      "Icon": "imgs/action-icon",
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "ui/inspector.html",
+      "States": [
+        {
+          "Image": "imgs/action-icon",
+          "ShowTitle": false
+        }
+      ]
+    }
+  ],
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "6.9"
+  }
+}
