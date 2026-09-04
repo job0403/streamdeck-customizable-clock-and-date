@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Clock Settings</title>
+    <link rel="stylesheet" href="inspector.css">
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <!-- GENERAL CONFIGURATION -->
+        <div class="sdpi-heading">DISPLAY CONFIGURATION</div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Time Format</div>
+            <select class="sdpi-item-value select" id="timeFormat">
+                <option value="24h">24 Hour (e.g. 13:45)</option>
+                <option value="12h">12 Hour (e.g. 01:45 PM)</option>
+            </select>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Date Format</div>
+            <select class="sdpi-item-value select" id="dateFormat">
+                <option value="SAT 6 JUN">SAT 6 JUN</option>
+                <option value="06 JUN 2026">06 JUN 2026</option>
+            </select>
+        </div>
+
+        <!-- TIME TYPOGRAPHY -->
+        <div class="sdpi-heading">TIME TYPOGRAPHY</div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Time Font</div>
+            <select class="sdpi-item-value select" id="timeFontFamily">
+                <option value="Inter">Inter</option>
+                <option value="Roboto">Roboto</option>
+                <option value="Antonio">Antonio</option>
+                <option value="Michroma">Michroma</option>
+                <option value="Segoe UI">Segoe UI</option>
+                <option value="Arial">Arial</option>
+            </select>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Time Weight</div>
+            <select class="sdpi-item-value select" id="timeFontWeight">
+                <option value="100">Thin (100)</option>
+                <option value="200">Extra Light (200)</option>
+                <option value="300">Light (300)</option>
+                <option value="400">Regular (400)</option>
+                <option value="500">Medium (500)</option>
+                <option value="600">Semi-Bold (600)</option>
+                <option value="700">Bold (700)</option>
+                <option value="800">Extra Bold (800)</option>
+                <option value="900">Black (900)</option>
+            </select>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Time Color</div>
+            <div class="sdpi-item-value color-picker-container">
+                <input type="color" id="timeColorPicker" value="#ffffff">
+                <input type="text" id="timeColor" value="#ffffff" placeholder="#ffffff">
+            </div>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Time Size</div>
+            <div class="sdpi-item-value">
+                <input class="slider-val" type="range" id="timeSize" min="10" max="80" value="55">
+                <span id="timeSize-val" class="val-label">55</span>
+            </div>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Time Width</div>
+            <div class="sdpi-item-value">
+                <input class="slider-val" type="range" id="timeStretch" min="0.5" max="1.5" step="0.05" value="0.85">
+                <span id="timeStretch-val" class="val-label">0.85</span>
+            </div>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Time Spacing</div>
+            <div class="sdpi-item-value">
+                <input class="slider-val" type="range" id="timeLetterSpacing" min="-10" max="20" value="0">
+                <span id="timeLetterSpacing-val" class="val-label">0</span>
+            </div>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Time Pos Y</div>
+            <div class="sdpi-item-value">
+                <input class="slider-val" type="range" id="timeY" min="0" max="144" value="90">
+                <span id="timeY-val" class="val-label">90</span>
+            </div>
+        </div>
+
+        <!-- SECONDS TYPOGRAPHY -->
+        <div class="sdpi-heading">SECONDS TYPOGRAPHY</div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Seconds Font</div>
+            <select class="sdpi-item-value select" id="secFontFamily">
+                <option value="Inter">Inter</option>
+                <option value="Roboto">Roboto</option>
+                <option value="Antonio">Antonio</option>
+                <option value="Michroma">Michroma</option>
+                <option value="Segoe UI">Segoe UI</option>
+                <option value="Arial">Arial</option>
+            </select>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Sec Weight</div>
+            <select class="sdpi-item-value select" id="secFontWeight">
+                <option value="100">Thin (100)</option>
+                <option value="200">Extra Light (200)</option>
+                <option value="300">Light (300)</option>
+                <option value="400">Regular (400)</option>
+                <option value="500">Medium (500)</option>
+                <option value="600">Semi-Bold (600)</option>
+                <option value="700">Bold (700)</option>
+                <option value="800">Extra Bold (800)</option>
+                <option value="900">Black (900)</option>
+            </select>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Sec Color</div>
+            <div class="sdpi-item-value color-picker-container">
+                <input type="color" id="secColorPicker" value="#ffffff">
+                <input type="text" id="secColor" value="#ffffff" placeholder="#ffffff">
+            </div>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Sec Size</div>
+            <div class="sdpi-item-value">
+                <input class="slider-val" type="range" id="secSize" min="10" max="50" value="25">
+                <span id="secSize-val" class="val-label">25</span>
+            </div>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Sec Width</div>
+            <div class="sdpi-item-value">
+                <input class="slider-val" type="range" id="secStretch" min="0.5" max="1.5" step="0.05" value="1.0">
+                <span id="secStretch-val" class="val-label">1.0</span>
+            </div>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Sec Spacing</div>
+            <div class="sdpi-item-value">
+                <input class="slider-val" type="range" id="secLetterSpacing" min="-10" max="20" value="3">
+                <span id="secLetterSpacing-val" class="val-label">3</span>
+            </div>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Sec Pos Y</div>
+            <div class="sdpi-item-value">
+                <input class="slider-val" type="range" id="secY" min="0" max="144" value="121">
+                <span id="secY-val" class="val-label">121</span>
+            </div>
+        </div>
+
+        <!-- DATE & DAY TYPOGRAPHY -->
+        <div class="sdpi-heading">DATE & DAY TYPOGRAPHY</div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Date Font</div>
+            <select class="sdpi-item-value select" id="dateFontFamily">
+                <option value="Inter">Inter</option>
+                <option value="Roboto">Roboto</option>
+                <option value="Antonio">Antonio</option>
+                <option value="Michroma">Michroma</option>
+                <option value="Segoe UI">Segoe UI</option>
+                <option value="Arial">Arial</option>
+            </select>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Date Weight</div>
+            <select class="sdpi-item-value select" id="dateFontWeight">
+                <option value="100">Thin (100)</option>
+                <option value="200">Extra Light (200)</option>
+                <option value="300">Light (300)</option>
+                <option value="400">Regular (400)</option>
+                <option value="500">Medium (500)</option>
+                <option value="600">Semi-Bold (600)</option>
+                <option value="700">Bold (700)</option>
+                <option value="800">Extra Bold (800)</option>
+                <option value="900">Black (900)</option>
+            </select>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Date Color</div>
+            <div class="sdpi-item-value color-picker-container">
+                <input type="color" id="dateColorPicker" value="#a8a8a8">
+                <input type="text" id="dateColor" value="#a8a8a8" placeholder="#a8a8a8">
+            </div>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Date Size</div>
+            <div class="sdpi-item-value">
+                <input class="slider-val" type="range" id="dateSize" min="8" max="40" value="24">
+                <span id="dateSize-val" class="val-label">24</span>
+            </div>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Date Spacing</div>
+            <div class="sdpi-item-value">
+                <input class="slider-val" type="range" id="dateLetterSpacing" min="-10" max="20" value="0">
+                <span id="dateLetterSpacing-val" class="val-label">0</span>
+            </div>
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Date Pos Y</div>
+            <div class="sdpi-item-value">
+                <input class="slider-val" type="range" id="dateY" min="0" max="144" value="26">
+                <span id="dateY-val" class="val-label">26</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="inspector.js"></script>
+</body>
+</html>
