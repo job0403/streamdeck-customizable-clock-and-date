@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="github-assets/StoreThumbnail.png" alt="Customizable Clock & Date" width="100%">
+  <img src="github-assets/thumb.png" alt="Customizable Clock & Date" width="100%">
   
   # Customizable Clock & Date for Stream Deck
 
@@ -12,11 +12,21 @@
 
 ### 📸 Beautiful Configurations
 
-<p align="center">
-  <img src="github-assets/2.png" width="30%">
-  <img src="github-assets/3.png" width="30%">
-  <img src="github-assets/4.png" width="30%">
-</p>
+<div align="center">
+  <img src="github-assets/1.png" width="100%">
+  <br><br>
+  <img src="github-assets/2.png" width="100%">
+  <br><br>
+  <img src="github-assets/3.png" width="100%">
+</div>
+
+### 📸 Real Life Setup
+
+<div align="center">
+  <img src="github-assets/4.png" width="100%">
+  <br><br>
+  <img src="github-assets/5.png" width="100%">
+</div>
 
 ## ✨ Features
 
